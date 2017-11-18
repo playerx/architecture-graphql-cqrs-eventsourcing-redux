@@ -16,7 +16,7 @@ public class CRUDController<TEntity> : Controller
         this.db = db;
     }
 
-    [HttpGet]
+    [HttpGet("list")]
     public virtual IEnumerable<TEntity> GetList(int skip = 0, int take = 100)
     {
         var filters = GetFilters(Request.Query);
@@ -43,7 +43,7 @@ public class CRUDController<TEntity> : Controller
 
 
     [HttpGet("{id}")]
-    public virtual TEntity Get(Guid? id)
+    public virtual TEntity Get(Guid id)
     {
         var filters = GetFilters(Request.Query);
 
@@ -71,7 +71,7 @@ public class CRUDController<TEntity> : Controller
 
 
     [HttpDelete("{id}")]
-    public virtual TEntity Delete(Guid? id)
+    public virtual TEntity Delete(Guid id)
     {
         var entity = db.Set<TEntity>().FirstOrDefault(x => x.Id == id);
         if (entity != null)
