@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Domain1/Query+Reducer/bin/Debug/netcoreapp2.0/api.dll",
+            "program": "${workspaceFolder}/micro-services/domain1/Query+Reducer/bin/Debug/netcoreapp2.0/api.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Domain1/Query+Reducer",
+            "cwd": "${workspaceFolder}/micro-services/domain1/Query+Reducer",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {

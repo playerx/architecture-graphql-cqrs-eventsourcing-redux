@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Domain1/Query+Reducer/api.csproj"
+                "${workspaceFolder}/micro-services/domain1/Query+Reducer/api.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

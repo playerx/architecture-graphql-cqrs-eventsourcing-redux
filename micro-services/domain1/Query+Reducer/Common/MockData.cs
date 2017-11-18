@@ -7,6 +7,7 @@ public class MockData
         var firstUserId = Guid.NewGuid();
         var secondUserId = Guid.NewGuid();
 
+
         db.Users.Add(new User { Id = firstUserId, Name = "Ezeki", CreateDate = DateTime.Now });
         db.Users.Add(new User { Id = secondUserId, Name = "Babt", CreateDate = DateTime.Now });
         db.Users.Add(new User { Id = Guid.NewGuid(), Name = "Playerx", CreateDate = DateTime.Now });
